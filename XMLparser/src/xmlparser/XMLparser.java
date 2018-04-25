@@ -16,20 +16,7 @@ public class XMLparser {
 
 			try {
 
-				 String fXmlFile = "<?xml version=\"1.0\" encoding=\"utf-16\"?>\n"
-								 + "<TransactionResponse>\n"
-								 + "  <TransactionID>2675568</TransactionID>\n"
-								 + "  <Status>001</Status>\n"
-								 + "  <StatusMessage>Request was successfully processed</StatusMessage>\n"
-								 + "  <TransactionDate>2018/04/25 13:48:09</TransactionDate>\n"
-								 + "  <TransactionBalance>24500.00</TransactionBalance>\n"
-								 + "  <Cards>\n"
-								 + "    <Card>\n"
-								 + "      <Serial>W12A0001364</Serial>\n"
-								 + "      <Pin>782603945116</Pin>\n"
-								 + "    </Card>\n"
-								 + "  </Cards>\n"
-								 + "</TransactionResponse>";
+				 String fXmlFile = "//  Valid XML file";
 				 DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 				 DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 				 Document doc = dBuilder.parse(new InputSource(new StringReader(fXmlFile)));
